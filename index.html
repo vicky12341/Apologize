@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -396,7 +396,7 @@
       }
 
       .letter-body {
-        background: white;
+        background: rgba(255, 255, 255, 0.342);
         border-radius: 16px;
         padding: 28px 24px;
         box-shadow: 0 4px 24px rgba(42, 26, 31, 0.06);
@@ -21574,7 +21574,7 @@ nG1FiCtcyoqzAGRDBybg2RCMQjLyTz7nj/E0gle3wVhBPuM/DqtNZ2TiMnqNSQ=="
     <!-- SCREEN 1 -->
     <div class="screen active" id="screen-lock">
       <div class="lock-ring"><div class="lock-emoji">🔐</div></div>
-      <h1>Something<br />awaits you  </h1>
+      <h1>Something<br />awaits you</h1>
       <p>Enter the code to unlock a message</p>
       <div class="pin-dots" id="pinDots">
         <div class="pin-dot"></div>
@@ -21615,19 +21615,35 @@ nG1FiCtcyoqzAGRDBybg2RCMQjLyTz7nj/E0gle3wVhBPuM/DqtNZ2TiMnqNSQ=="
             <div class="envelope-seal">&#128155;</div>
           </div>
         </div>
-        <div class="letter-body">
-          <div class="letter-salutation">Dear You,</div>
-          <div class="letter-text">
-            <p>Hey Saranya&#8230; I know I messed up, and I'm really sorry.</p>
-            <p>
-              You didn't deserve that, and I should've handled things better.
-              I've thought about it and I understand where I went wrong.
-            </p>
-            <p>
-              From here on, I'll drink only water &#8212; no alcohol. I'm
-              serious about that change.
-            </p>
-            <p>I care about you, and I want to do better.</p>
+        <div
+          class="letter-body"
+          style="
+            background: url(&quot;./saran.png&quot;) center/cover no-repeat;
+            opacity: 0.9;
+          "
+        >
+          <div
+            style="
+              background-color: rgba(255, 255, 255, 0.438);
+              padding: 2rem;
+              border-radius: 2rem;
+            "
+          >
+            <div class="letter-salutation">Dear You,</div>
+            <div class="letter-text">
+              <p>
+                Hey Saranya&#8230; I know I messed up, and I'm really sorry.
+              </p>
+              <p>
+                You didn't deserve that, and I should've handled things better.
+                I've thought about it and I understand where I went wrong.
+              </p>
+              <p>
+                From here on, I'll drink only water &#8212; no alcohol. I'm
+                serious about that change.
+              </p>
+              <p>I care about you, and I want to do better.</p>
+            </div>
           </div>
           <div class="letter-sign">&#8212; With all my heart &#127799;</div>
         </div>
@@ -21798,7 +21814,7 @@ nG1FiCtcyoqzAGRDBybg2RCMQjLyTz7nj/E0gle3wVhBPuM/DqtNZ2TiMnqNSQ=="
           hint.style.color = "#D4736A";
           setTimeout(function () {
             dots.classList.remove("wrong-shake");
-            hint.textContent = "Enter: enter correct code di kulla" ;
+            hint.textContent = "Enter: enter correct code di kulla";
             hint.style.color = "";
             pin = "";
             updateDots();
